@@ -1,11 +1,18 @@
 :root {
     --font: "DM Serif Text", serif;
+
     --navbar: #0e194f;
     --navbar-shadow: #e9b85a;
+    --nav-link: #64dfff;
+
     --title: #64dfff;
     --title-shadow: #2f6ee7;
-    --nav-link: #64dfff;
+    
     --body: #ece5f2;
+
+    --employ-bg: #202020;
+    --employ-text: #9b9b9b;
+
     --text: #000;
     --footer: #000;
     --footer-text: #fff;
@@ -38,6 +45,15 @@ footer p {
     text-align: center;
 }
 
+.underline-spaced {
+  text-underline-offset: 8px;
+}
+
+.nav-sep {
+  color: var(--navbar-shadow);
+  font-size: 1.2rem;
+}
+
 /* Navbar */
 .navbar {
   position: fixed;
@@ -47,7 +63,7 @@ footer p {
   color: var(--nav-link);
   z-index: 1000;
   padding: 1rem 2rem;
-  text-shadow: -1.2px 1.2px var(--title-shadow);
+  text-shadow: -1px 1px var(--title-shadow);
   box-shadow: 0px 4px var(--navbar-shadow);
 }
 
@@ -77,7 +93,7 @@ footer p {
 
 .nav-links li a {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: var(--nav-link);
   font-weight: 500;
   transition: color 0.2s;
@@ -107,6 +123,28 @@ footer p {
   padding-left: 15rem;
   padding-right: 15rem;
   background-color: var(--body);
+}
+
+.employ-text {
+  color: var(--employ-text);
+  background-color: var(--employ-bg);
+  display: flex;
+  align-items: center;         /* vertically align image and text */
+  gap: 2rem;                   /* spacing between image and text */
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.employ-text h2 {
+  color: #fff;
+}
+
+.employ-text img {
+  width: 400px;
+  max-width: 100%;            /* make sure it scales on small screens */
+  height: auto;
+  box-shadow: 6px 6px var(--navbar-shadow);
 }
 
 @media (max-width: 768px) {
