@@ -1,0 +1,137 @@
+:root {
+    --font: "DM Serif Text", serif;
+    --navbar: #0e194f;
+    --navbar-shadow: #e9b85a;
+    --title: #64dfff;
+    --title-shadow: #2f6ee7;
+    --nav-link: #64dfff;
+    --body: #ece5f2;
+    --text: #000;
+    --footer: #000;
+    --footer-text: #fff;
+    --link: #b9b2ff;
+    --link-hover: #fff3f0;
+}
+
+/* Reset default margin/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+a {
+    color: var(--link);
+}
+
+footer {
+    padding: 1rem 2rem;
+    background-color: var(--footer);
+    justify-content: space-between;
+    align-items: center;
+    border-top: 4px solid var(--navbar-shadow);
+}
+
+footer p {
+    color: var(--footer-text);
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--navbar);
+  color: var(--nav-link);
+  z-index: 1000;
+  padding: 1rem 2rem;
+  text-shadow: -1.2px 1.2px var(--title-shadow);
+  box-shadow: 0px 4px var(--navbar-shadow);
+}
+
+/* Flex layout for navbar contents */
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Website title on the left */
+.site-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--title);
+  text-shadow: -2px 2px var(--title-shadow);
+}
+
+/* Navigation links on the right */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--nav-link);
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links li a:hover {
+  color: var(--link-hover);
+}
+
+/* Masthead image section */
+.masthead {
+  margin-top: 59px; /* space for fixed navbar */
+  height: 100vh; /* full viewport height */
+  overflow: hidden;
+  border-bottom: 4px solid var(--navbar-shadow);
+}
+
+.masthead img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* scale image while maintaining aspect ratio */
+}
+
+/* Content section */
+.content {
+  padding: 2rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  background-color: var(--body);
+}
+
+@media (max-width: 768px) {
+  .image-text {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.image-text {
+  display: flex;
+  align-items: center;         /* vertically align image and text */
+  gap: 2rem;                   /* spacing between image and text */
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-text img {
+  width: 400px;
+  max-width: 100%;            /* make sure it scales on small screens */
+  height: auto;
+  box-shadow: 6px 6px var(--navbar-shadow);
+}
+
+.text-content {
+  flex: 1;                    /* text takes remaining space */
+}
