@@ -84,6 +84,11 @@ footer p {
   text-shadow: -2px 2px var(--title-shadow);
 }
 
+.site-title a {
+  color: var(--title);
+  text-decoration: none;
+}
+
 /* Navigation links on the right */
 .nav-links {
   list-style: none;
@@ -174,12 +179,12 @@ footer p {
   flex: 1;                    /* text takes remaining space */
 }
 
-/* Games List */
-#games-list {
+/* Staff List */
+#staff-list {
   padding: 10px 0;
 }
 
-.game-card {
+.staff-card {
   display: flex;
   flex-wrap: wrap;
   background: var(--employ-bg);
@@ -188,27 +193,41 @@ footer p {
   box-shadow: 5px 5px var(--navbar-shadow);
 }
 
-.game-card img {
+.staff-card img {
   width: 190px;
   max-width: 100%;
   object-fit: cover;
 }
 
-.game-info {
+.staff-info {
   flex: 1;
   padding: 20px;
   text-align: left;
 }
 
-.game-info h3 {
+.staff-info h3 {
   color: var(--footer-text);
   margin: 0 0 10px 0; /* Tighten up spacing */
   font-size: 2.5rem;
   text-align: left;
 }
 
-.game-info p {
+.staff-info p {
   color: var(--employ-text);
   font-size: 1.3rem;
   margin-bottom: 15px;
+}
+
+/* Discord Badge */
+.discord {
+  padding: 40px 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.discord img {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
 }
