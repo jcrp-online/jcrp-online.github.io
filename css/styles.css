@@ -139,6 +139,7 @@ footer p {
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  box-shadow: 6px 6px var(--navbar-shadow);
 }
 
 .employ-text h2 {
