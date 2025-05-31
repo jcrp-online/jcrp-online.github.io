@@ -173,3 +173,42 @@ footer p {
 .text-content {
   flex: 1;                    /* text takes remaining space */
 }
+
+/* Games List */
+#games-list {
+  padding: 10px 0;
+}
+
+.game-card {
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--employ-bg);
+  margin-bottom: 30px;
+  overflow: hidden;
+  box-shadow: 5px 5px var(--navbar-shadow);
+}
+
+.game-card img {
+  width: 190px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.game-info {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.game-info h3 {
+  color: var(--footer-text);
+  margin: 0 0 10px 0; /* Tighten up spacing */
+  font-size: 2.5rem;
+  text-align: left;
+}
+
+.game-info p {
+  color: var(--employ-text);
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
