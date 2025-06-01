@@ -108,6 +108,30 @@ footer p {
   color: var(--link-hover);
 }
 
+/* Rules */
+.rules {
+  list-style: none;
+  display: list-item;
+  padding-left: 40px;
+  gap: 5rem;
+}
+
+.rules li {
+  list-style: disc;
+  margin-bottom: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: var(--text);
+}
+
+.content-rules {
+  padding: 2rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  background-color: var(--body);
+}
+
 /* Masthead image section */
 .masthead {
   margin-top: 59px; /* space for fixed navbar */
