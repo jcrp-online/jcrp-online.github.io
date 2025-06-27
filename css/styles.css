@@ -1,12 +1,12 @@
 :root {
     --font: "DM Serif Text", serif;
 
-    --navbar: #0e194f;
-    --navbar-shadow: #e9b85a;
-    --nav-link: #64dfff;
+    --navbar: #082c04;
+    --navbar-shadow: #f3b23b;
+    --nav-link: #80ff64;
 
-    --title: #64dfff;
-    --title-shadow: #2f6ee7;
+    --title: #80ff64;
+    --title-shadow: #316328;
     
     --body: #ece5f2;
 
@@ -16,8 +16,8 @@
     --text: #000;
     --footer: #000;
     --footer-text: #fff;
-    --link: #b9b2ff;
-    --link-hover: #fff3f0;
+    --link: #b6ffb2;
+    --link-hover: #f1fff0;
 }
 
 /* Reset default margin/padding */
